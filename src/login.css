@@ -1,0 +1,21 @@
+
+GtkApplicationWindow {
+    background-image: url("file:/src/assets/image/login_wal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+GtkLabel {
+    color: red;
+    font-size: 16px;
+}
+
+GtkEntry {
+    background-color: #ffffff; 
+}
+
+GtkButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+}

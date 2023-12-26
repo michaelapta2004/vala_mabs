@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  
+  <template class="VmabsWindow" parent="GtkApplicationWindow">
+    <property name="default-width">360</property>
+    <property name="default-height">800</property>
+
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <!-- Header Label -->
+        <child>
+          <object class="GtkLabel" id="header_label">
+            <property name="label">Hi. Welcome to Auto Build Server for Minecraft!</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+        </child>
+
+        <!-- Email Entry -->
+        <child>
+          <object class="GtkEntry" id="email_entry">
+            <property name="placeholder-text">Email</property>
+          </object>
+        </child>
+
+        <!-- Password Entry -->
+        <child>
+          <object class="GtkEntry" id="password_entry">
+            <property name="placeholder-text">Password</property>
+            <property name="visibility">false</property>
+          </object>
+        </child>
+
+        <!-- Login Button -->
+        <child>
+          <object class="GtkButton" id="login_button">
+            <property name="label">Login</property>
+            <signal name="clicked" handler="on_login_button_clicked"/>
+          </object>
+        </child>
+
+        <!-- Register Button -->
+        <child>
+          <object class="GtkButton" id="register_button">
+            <property name="label">Register</property>
+            <signal name="clicked" handler="on_register_button_clicked"/>
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </template>
+</interface>
